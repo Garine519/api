@@ -52,7 +52,7 @@ class Accept implements Validator
     public function validate(Request $request)
     {
         try {
-            $call_callbackurl = config('toters.call_callback_url');
+            $call_callbackurl = config('toters.robo_calls.call_callback_url');
             $accept_header = config('toters.apps.backend.accept_header');
             if ($request->is($call_callbackurl)){
                 $request->headers->set('accept', $accept_header, true);
