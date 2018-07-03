@@ -83,7 +83,7 @@ class Routes extends RouteListCommand
     {
         $this->routes = $this->router->getRoutes();
 
-        parent::handle();
+        //parent::handle();
     }
 
     /**
